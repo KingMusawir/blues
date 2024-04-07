@@ -150,7 +150,10 @@ function NavBar() {
                   <Link
                     to={nav.to}
                     className='block text-center'
-                    onClick={(closeModal, handleClick)}
+                    onClick={() => {
+                      closeModal();
+                      handleClick();
+                    }}
                   >
                     {nav.text}
                   </Link>

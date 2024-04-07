@@ -46,7 +46,7 @@ function SearchBar() {
 
   function Select(props) {
     return (
-      <select className='p-3 bg-white bg-opacity-75 w-[5rem] lg:w-[15rem] border border-gray-300 focus:outline-none'>
+      <select className='p-3 bg-white bg-opacity-75 w-full   border border-gray-300 focus:outline-none'>
         {props.values.map((value, index) => (
           <option value='value' key={index}>
             {value}
@@ -58,7 +58,7 @@ function SearchBar() {
 
   return (
     <div className='mx-auto max-w-screen-tiny md:max-w-screen-medium lg:max-w-screen-medium xl:max-w-screen-large xxlarge:max-w-screen-xlarge '>
-      <form className=' lg:mx-auto mb-12 flex   gap-2'>
+      <form className=' lg:mx-auto mb-12 flex flex-col md:flex-row   gap-2'>
         <input
           type='search'
           placeholder='Search'
@@ -67,11 +67,17 @@ function SearchBar() {
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '22rem center',
           }}
-          className='p-3 bg-white bg-opacity-75 w-[10rem] sm:w-[25rem] border border-gray-300 focus:outline-none'
+          className='p-3 bg-white bg-opacity-75  sm:w-[25rem] border border-gray-300 focus:outline-none'
         />
-        <Select values={locations} />
-        <Select values={priceRange} />
-        <Select values={propertyType} />
+        <div>
+          <Select values={locations} />
+        </div>
+        <div className='w-full'>
+          <Select values={priceRange} />
+        </div>
+        <div>
+          <Select values={propertyType} />
+        </div>
       </form>
     </div>
   );

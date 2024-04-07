@@ -18,7 +18,7 @@ function Hero() {
     <div
       data-aos='fade-up'
       data-aos-anchor-placement='top-bottom'
-      className=' grid grid-cols-1 lg:grid-cols-5 gap-4 mb-28 '
+      className=' grid grid-cols-1 lg:grid-cols-5 gap-4 mb-28  '
     >
       <div className=' col-span-2 flex flex-col '>
         <p className=' text-primary mb-6 text-base'>Your all-in-one stop</p>
@@ -37,7 +37,7 @@ function Hero() {
         <div className=' mb-16'>
           <FindPropertyProp value='Find Property' />
         </div>
-        <div className=' flex gap-10'>
+        <div className=' flex gap-5 lg:gap-10'>
           <Detailsprop number='300' value='Property' />
           <Detailsprop number='20k' value='Satisfied Customers' />
           <Detailsprop number='50' value='Agents' />

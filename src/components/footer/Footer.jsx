@@ -33,19 +33,32 @@ function Footer() {
     { content: 'Support  Center', special: false },
     { content: 'Contact Us', special: false },
   ];
+
+  const isMobile = window.innerWidth <= 768;
   return (
-    <div className='bg-footer footer'>
-      <footer className='mx-auto max-w-screen-tiny sm:max-w-screen-small md:max-w-screen-medium lg:max-w-screen-large xl:max-w-screen-xlarge py-8 flex justify-between '>
+    <div className='bg-footer footer text-[10px] lg:text-[20px] p-3'>
+      <footer className='mx-auto max-w-screen-tiny sm:max-w-screen-small md:max-w-screen-medium lg:max-w-screen-large xl:max-w-screen-xlarge py-8 flex gap-4 justify-between '>
         <div className=' flex flex-col gap-24'>
           <div>
             <img src={LogoLight} alt='' />
           </div>
           <div>
             <div className='socials flex gap-4 mb-4'>
-              <FaInstagram size='20' fill='#D1D1ED' />
-              <SlSocialFacebook size='20' fill='#D1D1ED' />
-              <SlSocialTwitter size='20' fill='#D1D1ED' />
-              <SlSocialLinkedin size='20' fill='#D1D1ED' />
+              {isMobile ? (
+                <>
+                  <FaInstagram className='icon-sm' fill='#D1D1ED' />
+                  <SlSocialFacebook className='icon-sm' fill='#D1D1ED' />
+                  <SlSocialTwitter className='icon-sm' fill='#D1D1ED' />
+                  <SlSocialLinkedin className='icon-sm' fill='#D1D1ED' />
+                </>
+              ) : (
+                <>
+                  <FaInstagram className='icon-lg' fill='#D1D1ED' />
+                  <SlSocialFacebook className='icon-lg' fill='#D1D1ED' />
+                  <SlSocialTwitter className='icon-lg' fill='#D1D1ED' />
+                  <SlSocialLinkedin className='icon-lg' fill='#D1D1ED' />
+                </>
+              )}
             </div>
             <p className=' text-secondary'>Copyright 2024 blues.com</p>
           </div>

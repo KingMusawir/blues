@@ -4,7 +4,7 @@
   box-sizing: border-box;
   /* font-size: 100%; */
   /* color: #292929; */
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .bg-image {
   background-size: cover;
@@ -14,6 +14,17 @@
 @media (max-width: 630px) {
   .footer {
     font-size: 90%;
+  }
+}
+@media (min-width: 1024px) {
+  .icon-lg {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon-sm {
+    font-size: 10px;
   }
 }
 .team {
