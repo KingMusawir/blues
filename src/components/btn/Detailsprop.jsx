@@ -4,7 +4,7 @@ function Detailsprop(props) {
   return (
     <div>
       <h1
-        className={` font-bold text-5xl text-center mb-4 text-${props.color}`}
+        className={` font-bold text-2xl lg:text-5xl text-center mb-4 text-${props.color}`}
       >
         {props.number + '+'}
       </h1>
