@@ -34,7 +34,7 @@ function Footer() {
     { content: 'Contact Us', special: false },
   ];
   return (
-    <div className='bg-footer'>
+    <div className='bg-footer footer'>
       <footer className='mx-auto max-w-screen-tiny sm:max-w-screen-small md:max-w-screen-medium lg:max-w-screen-large xl:max-w-screen-xlarge py-8 flex justify-between '>
         <div className=' flex flex-col gap-24'>
           <div>

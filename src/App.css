@@ -12,7 +12,7 @@
   background-image: url('../src/assets/images/reviewsbg.png');
 }
 @media (max-width: 630px) {
-  .bg-footer {
+  .footer {
     font-size: 90%;
   }
 }
