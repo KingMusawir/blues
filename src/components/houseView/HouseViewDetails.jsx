@@ -23,21 +23,20 @@ function HouseViewDetails() {
   }, []);
   return (
     <div>
-      <NavBar />
-      <div data-aos='flip-up' className=' w-[100%]'>
+      <div data-aos='flip-up' className=' '>
         <img src={House1} alt='' className=' mb-4 w-[100%]' />
       </div>
 
-      <div className='  mx-auto max-w-screen-tiny sm:max-w-screen-small md:max-w-screen-medium lg:max-w-screen-large xl:max-w-screen-xlarge xxlarge:max-w-screen-xxlarge'>
-        <div className='flex justify-between mb-12'>
+      <div className=' flex flex-col justify-center items-center  mx-auto max-w-screen-tiny sm:max-w-screen-small md:max-w-screen-medium lg:max-w-screen-large xl:max-w-screen-xlarge xxlarge:max-w-screen-xxlarge'>
+        <div className='flex flex-col md:flex-row gap-10 md:gap-4  mb-12 '>
           <div>
-            <h2 className=' font-semibold text-[1.5rem] flex items-center gap-4'>
+            <h2 className=' font-semibold text-[14px] md:text-[1.5rem] flex items-center gap-4'>
               3 Bedroom Apartment{' '}
               <span className=' font-normal text-[10px] bg-[#D1D1ED] text-[#1818A6] px-2 py-1'>
                 For Sale
               </span>
             </h2>
-            <p className=' font-normal mb-3'>
+            <p className=' font-normal mb-3 text-[10px] md:text-[18px] '>
               Description: A 3 bedroom fully furnished apartment for sale.{' '}
               <br /> Located in the heart of Lagos Island , the hub of business
             </p>
@@ -55,7 +54,9 @@ function HouseViewDetails() {
             </div>
           </div>
           <div>
-            <p className='font-semibold text-[1.5rem] mb-8'>N 300,000.00</p>
+            <p className='font-semibold text-[14px] md:text-[1.5rem] mb-8'>
+              N 300,000.00
+            </p>
             <div className=' inline-block'>
               <Link className=' flex items-center justify-center gap-2 bg-[#1818A6] text-white p-3'>
                 <LuPhone /> <span>CONTACT AGENT</span>
@@ -65,11 +66,14 @@ function HouseViewDetails() {
         </div>
         <div className=' mb-20'>
           <p className=' font-semibold mb-6'>Other images of the apartment</p>
-          <div data-aos='fade-up-left' className=' flex gap-3'>
-            <img src={Other1} alt='' className=' w-80' />
-            <img src={Other2} alt='' className=' w-80' />
-            <img src={Other3} alt='' className=' w-80' />
-            <img src={Other4} alt='' className=' w-80' />
+          <div
+            data-aos='fade-up-left'
+            className=' grid grid-cols-2 lg:flex gap-3'
+          >
+            <img src={Other1} alt='' className=' w-[200px]' />
+            <img src={Other2} alt='' className=' w-[200px]' />
+            <img src={Other3} alt='' className=' w-[200px]' />
+            <img src={Other4} alt='' className=' w-[200px]' />
           </div>
         </div>
       </div>
