@@ -9,7 +9,7 @@ import 'aos/dist/aos.css'; // Import AOS CSS
 function Hero() {
   useEffect(() => {
     AOS.init({
-      duration: 800, // Animation duration in milliseconds
+      duration: 200, // Animation duration in milliseconds
       easing: 'ease', // Easing function for animations
       once: false, // Whether animations should only happen once
     });

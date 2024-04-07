@@ -24,7 +24,7 @@ function OnboardSlider() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       nextSlide();
-    }, 3000);
+    }, 1000);
 
     return () => clearInterval(intervalId);
   }, []);

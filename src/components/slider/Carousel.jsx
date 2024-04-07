@@ -9,7 +9,7 @@ import 'aos/dist/aos.css'; // Import AOS CSS
 function Carousel(props) {
   useEffect(() => {
     AOS.init({
-      duration: 800, // Animation duration in milliseconds
+      duration: 200, // Animation duration in milliseconds
       easing: 'ease', // Easing function for animations
       once: false, // Whether animations should only happen once
     });
@@ -17,7 +17,7 @@ function Carousel(props) {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 200,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
