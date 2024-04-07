@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 100%; */
+  /* color: #292929; */
+}
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-image: url('../src/assets/images/reviewsbg.png');
+}
+@media (max-width: 630px) {
+  * {
+    font-size: 90%;
+  }
+}
+.team {
+  position: relative;
+  display: inline-block;
+}
+.team::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transition: all 0.8s ease;
+}
+.team:hover::after {
+  background-color: #1818a6e0;
+}
