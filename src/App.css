@@ -4,6 +4,7 @@
   box-sizing: border-box;
   /* font-size: 100%; */
   /* color: #292929; */
+  overflow-x: hidden;
 }
 .bg-image {
   background-size: cover;
