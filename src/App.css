@@ -11,11 +11,11 @@
   background-position: center;
   background-image: url('../src/assets/images/reviewsbg.png');
 }
-/* @media (max-width: 630px) {
-  * {
+@media (max-width: 630px) {
+  .bg-footer {
     font-size: 90%;
   }
-} */
+}
 .team {
   position: relative;
   display: inline-block;

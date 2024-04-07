@@ -19,7 +19,7 @@ function Suscribe() {
         <input
           type='submit'
           value='Subscribe'
-          className=' bg-primary py-2 px-6 text-white border-none'
+          className=' bg-primary py-2 px-4 lg:px-6 text-white border-none'
         />
       </form>
     </div>
