@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import LogoDark from '../../assets/logo/logo-dark.png';
 import { Link } from 'react-router-dom';
 import BtnProp from '../btn/BtnProp';
-import { blue } from '@mui/material/colors';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoClose } from 'react-icons/io5';
 import AOS from 'aos';
