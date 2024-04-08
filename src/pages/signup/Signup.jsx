@@ -11,14 +11,14 @@ import OnboardSide from '../../components/onbaordSide/OnboardSide';
 import NavBar from '../../components/navBar/NavBar';
 import Footer from '../../components/footer/Footer';
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS CSS
+import 'aos/dist/aos.css';
 
 function Signup() {
   useEffect(() => {
     AOS.init({
-      duration: 200, // Animation duration in milliseconds
-      easing: 'ease', // Easing function for animations
-      once: false, // Whether animations should only happen once
+      duration: 200,
+      easing: 'ease',
+      once: false,
     });
   }, []);
   return (
